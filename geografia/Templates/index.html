@@ -1,0 +1,29 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio</title>
+    <script src="{% static 'js/index.js' %}"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="container" style="padding:3% ;">
+        <div class="card">
+            <div class="card-content">
+                <h1 class="text-center mb-4">Consultar el alcade de cada ciudad en suramerica</h1>
+                <label class="mb-2"><b>Elige el pais</b></label>
+                <select id="cbopais" class="form-select mb-4" aria-label="Default select example"></select>
+                <label class="mb-2"><b>Elige la ciudad</b></label>
+                <select id="cbociudad" class="form-select mb-4" aria-label="Default select example"></select>
+                <h4 id="txtalcalde" class="text-center" style="background-color: yellow;"></h4>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
